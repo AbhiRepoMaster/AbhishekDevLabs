@@ -1,0 +1,75 @@
+/* src/App.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 1rem 2rem;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+    .nav-links li {
+        margin: 0 1rem;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.github-icon {
+    color: white;
+}
+
+.section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+.about-section {
+    background-color: #f4f4f4;
+}
+
+.skills-section {
+    background-color: #e4e4e4;
+}
+
+/* Add styles for other sections */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+}
+
+/*About section css*/
+/* src/components/About.css */
+.about-container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.typewriter-text {
+    font-weight: bold;
+    color: #FC4D03; /* Customize color as needed */
+}

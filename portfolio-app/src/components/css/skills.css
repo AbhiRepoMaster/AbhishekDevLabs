@@ -1,0 +1,59 @@
+/* src/css/skills.css */
+
+.skills-container {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
+    .timeline-item:before {
+        content: '';
+        position: absolute;
+        left: 15px;
+        top: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #FC4D03; /* Change to desired color */
+        border-radius: 50%;
+    }
+
+.timeline-content {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.skill-items-container {
+    margin-top: 10px;
+}
+
+.skill-item-card {
+    margin-bottom: 10px;
+}
+
+.tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tool-tile {
+    background-color: #e4e4e4;
+    padding: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,86 @@
+/* Center-align the entire projects container */
+.projects-section {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title styling */
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Centered grid layout with equal margin */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid items are responsive */
+    gap: 2rem; /* Spacing between grid items */
+    justify-content: center; /* Center grid items */
+    align-items: stretch; /* Stretch items to be of equal height */
+    max-width: 1200px; /* Maximum width for the grid */
+    margin: 0 auto; /* Center the grid container */
+}
+
+/* Project card styling */
+.project-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+    .project-card:hover {
+        transform: translateY(-10px); /* Hover effect */
+    }
+
+    .project-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #007BFF;
+    }
+
+    .project-card p {
+        margin: 0.5rem 0;
+        color: #555;
+    }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    ul li {
+        margin: 0.5rem 0;
+        color: #333;
+    }
+
+/* Tool list styling */
+.tool-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust based on content */
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+    .tool-list li {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 0.5rem;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}

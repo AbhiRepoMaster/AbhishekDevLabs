@@ -1,0 +1,61 @@
+/* src/components/Navbar.css */
+
+/* Styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    background-color: #333;
+    position: relative; /* Ensure the button can be positioned absolutely */
+}
+
+/* Styling for navigation links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+        .nav-links a:hover {
+            color: #FC4D03; /* Change color on hover */
+        }
+
+/* Styling for the GitHub icon */
+.github-icon {
+    color: white;
+    margin-left: auto; /* Pushes the GitHub icon to the right */
+}
+
+/* Styling for the outline button */
+.outline-button {
+    position: relative;
+    border: 2px solid #FC4D03;
+    background-color: transparent;
+    color: #FC4D03;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0px 53px 0px 0px;
+}
+
+    .outline-button:hover {
+        background-color: #FC4D03; /* Background color on hover */
+        color: white; /* Text color on hover */
+        margin: -6px 54px 0px 15px !important;
+    }
